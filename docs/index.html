@@ -24,7 +24,7 @@
         images.forEach((e) => {
           console.log(e.src);
           e.src =
-            window.location.origin +
+            window.location.href +
             "/" +
             e.src.slice(e.src.indexOf("/static") + 1, e.src.length);
         });
