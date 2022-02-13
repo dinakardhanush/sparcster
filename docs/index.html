@@ -36,7 +36,9 @@
       // make a mutation oberver
       let observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
-          imgMod();
+          setTimeout(function () {
+            imgMod();
+          }, 2000);
         });
       });
     </script>
